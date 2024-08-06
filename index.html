@@ -23,18 +23,7 @@
             transition: background-color 0s;
             font-size: 1.5em;
         }
-        .controls {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            position: absolute;
-            bottom: 20px;
-            width: 100%;
-        }
-        .container {
-            position: relative;
-            min-height: 100vh;
-        }
+        
         </style>
 </head>
 
@@ -171,6 +160,13 @@
                 <i class="mdi mdi-redhat pacman__ghost--red"></i>
 
             </div>
+		<br>
+            <h2>&gt; My Certificates</h2>
+             <div class="fa-field">
+            <button class="button" id="fa-button" onclick="openNewPage()">
+                <i class="fas fa-file-image"></i>
+            </button>
+        </div>
         </section>
 
         <section class="projects">
@@ -217,11 +213,7 @@
             </div>
         </div>
     </footer>
-    <div class="controls">
-            <button class="button" id="fa-button" onclick="openNewPage()">
-                <i class="fas fa-file-image"></i>
-            </button>
-        </div>
+    
         <script>
             function openNewPage() {
                 // Ensure 'test.html' exists in the same directory as this HTML file
